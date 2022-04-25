@@ -94,7 +94,7 @@ exports.delete = (req, res) => {
                 res.status(404).send({ message: `Cannot Delete with id ${id}.` });
             } else {
                 res.send({
-                    message: "User was deleted successfully!",
+                    message: "User deleted successfully!",
                 });
             }
         })
