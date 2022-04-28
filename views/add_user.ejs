@@ -1,63 +1,27 @@
-<!--include header-->
+<!-- include header -->
 <%- include('include/_header') %>
-    <!--/include header-->
-    <!--Main-->
+    <!-- /include header -->
+
+    <!-- Main Site -->
     <main id="site-main">
         <div class="container">
             <div class="box-nav d-flex justify-between">
                 <div class="filter">
-                    <a href="/" class="all_users"><i class="fa-solid fa-angles-left"></i> All Users</a>
+                    <a href="/"><i class="fas fa-angle-double-left"></i> All Users</a>
                 </div>
             </div>
             <div class="form-title text-center">
-                <h2 class="text-dark">New User</h2><span class="text-light">Registration form</span>
+                <h2 class="text-dark">New User</h2>
+                <span class="text-light">Use this form to add a new user</span>
             </div>
 
-            <!--Form-->
-            <form action="/" method="POST" id="update_user">
-                <div class="new_user">
-                    <div class="form-group">
-                        <label for="name" class="text-light">Name</label>
-                        <input type="hidden" name="id" value="">
-                        <input type="text" name="name" value="" placeholder="Your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="Email" class="text-light">Email</label>
-                        <input type="text" name="email" placeholder="abc@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="status" class="text-light">Gender</label>
-                        <div class="radio inline">
-                            <input type="radio" id="radio1" name="gender" value="Male">
-                            <label for="radio1" class="text-light">Male</label>
-                        </div>
-                        <div class="radio inline">
-                            <input type="radio" id="radio2" name="gender" value="Female">
-                            <label for="radio2" class="text-light">Female</label>
-                        </div>
-
-                    </div>
-                    <div class="form-group">
-                        <label for="status" class="text-light">Status</label>
-                        <div class="radio inline">
-                            <input type="radio" id="radio3" name="status" value="Active">
-                            <label for="radio3" class="text-light">Active</label>
-                        </div>
-                        <div class="radio inline">
-                            <input type="radio" id="radio4" name="status" value="Inactive">
-                            <label for="radio4" class="text-light">Inactive</label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn text-dark update">Submit</button>
-                    </div>
-                </div>
-            </form>
-            <!--/Form-->
+            <!-- add user form -->
+            <%- include('include/_form') %>
 
         </div>
-
     </main>
-    <!--include footer-->
+    <!-- /Main Site -->
+
+    <!-- include footer -->
     <%- include('include/_footer') %>
-        <!--/include footer-->
+        <!-- /include footer -->
