@@ -2,8 +2,8 @@
 :root {
     --dark: #2b2d42;
     --light: #adb5bd;
-    --border: #6e7e8d;
-    --border-btn: #95a9b1;
+    --border: #dee2e6;
+    --border-btn: #edf2f4;
 }
 
 * {
@@ -13,19 +13,12 @@
 }
 
 a {
-    font-size: 2rem;
     text-decoration: none;
     font-family: 'Roboto Serif', serif;
 }
 
-.all_users {
-    font-size: 1.5rem;
-    text-decoration: none;
-    font-family: 'Roboto', 'sans-serif';
-}
-
 .container {
-    max-width: 100%;
+    max-width: 1024px;
     margin: auto;
 }
 
@@ -72,15 +65,29 @@ a {
 }
 
 #header nav {
-    background-color: #06d6a0;
-    padding: 1em 0;
     width: 100%;
 }
 
+.header-title {
+    font-size: 3rem;
+}
+
+nav {
+    background-color: #06d6a0;
+    padding: 2em 0;
+    margin: 30px, 0;
+}
+
 #site-main {
-    max-width: 50%;
     margin: 0 auto;
+    max-width: 50%;
+    margin-top: 6em;
     font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-family: 'Roboto Serif', serif;
+    color: #8e2de2;
 }
 
 #site-main .container .box-nav>a {
@@ -189,8 +196,8 @@ table {
 /* adding style to radio buttons */
 
 .radio input[type='radio'] {
-    /* position: absolute; */
-    opacity: 80%;
+    position: absolute;
+    opacity: 0;
 }
 
 .radio input[type='radio']+.radio-label:before {
@@ -233,7 +240,7 @@ table {
     padding: .9em 1em;
     background-color: #16db93;
     border: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: 1em;
     cursor: pointer;
     border-radius: .2em;
@@ -242,6 +249,6 @@ table {
 
 #update_user .form-group .btn:hover,
 #add_user .form-group .btn:hover {
-    background-color: var(--light);
+    background-color: var(--dark);
     color: var(--border);
 }
